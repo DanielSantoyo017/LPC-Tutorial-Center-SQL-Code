@@ -511,7 +511,7 @@ GROUP BY
 	Student_Use_Sequence,
 	Mode_of_Service
 	)
---Case statment used to lable distinct subject retention based on the number of max visits per subject and course
+--Case statment used to label distinct subject retention based on the number of max visits per subject and course
 SELECT 
 	Date,
 	Student_ID,
@@ -540,7 +540,7 @@ GROUP BY
 
 
 --DB 5 Service Count data
-
+--Query counts the total number of visits 
 WITH Subject_Service_Cnt AS (
 SELECT
 	Date,
@@ -557,7 +557,7 @@ SELECT
 FROM F21_SP22_Penji_Data
 WHERE Service_Description !='Study - Room 2401'
 )
-
+--Case statement used to describe the service use status
 SELECT DISTINCT 
 	Semester,
 	Student_ID,
